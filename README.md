@@ -1,7 +1,3 @@
-Here’s a clean and professional-looking version of your README with improved formatting, headings, and consistent structure:
-
----
-
 # 📱 Moukthar
 
 **Moukthar** is a remote administration tool (RAT) for Android devices, offering a comprehensive suite of surveillance and control features.
@@ -214,7 +210,3 @@ sudo service apache2 restart
 - [ ] Improve image/video capture when app is not focused  
 - [ ] Fix download issues with `DownloadManager`  
 - [ ] Fix directory listing to show all contents  
-
----
-
-Let me know if you'd like a badge section or deployment instructions for cloud environments too!
