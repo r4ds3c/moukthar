@@ -22,7 +22,36 @@ Remote adminitration tool for android
   ```console
   git clone https://github.com/Tomiwa-Ot/moukthar.git
   ```
-- Install php, composer, mysql, php-mysql driver, apache2 and a2enmod
+- Install required dependencies
+
+# Update package lists
+sudo apt update
+
+# Install Apache2
+sudo apt install -y apache2
+
+# Install MySQL (MariaDB is the default in Debian 12)
+sudo apt install -y mariadb-server mariadb-client
+
+# Install PHP and common extensions
+sudo apt install -y php php-common php-cli
+
+# Install PHP-MySQL driver
+sudo apt install -y php-mysql
+
+# Install additional useful PHP extensions (optional but recommended)
+sudo apt install -y php-curl php-json php-mbstring php-xml php-zip
+
+# Enable Apache rewrite module
+sudo a2enmod rewrite
+
+# Restart Apache to apply changes
+sudo systemctl restart apache2
+
+# Install Composer
+sudo apt install -y curl
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
 - Move server files to ```/var/www/html/``` and install dependencies
   ```console
   mv moukthar/Server/* /var/www/html/
